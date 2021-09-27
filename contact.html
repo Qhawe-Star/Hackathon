@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 710px;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+}
+
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(58, 51, 51);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+.siite-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.siite-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.siite-footer hr.small
+{
+  margin:20px 0
+}
+.siite-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.siite-footer a
+{
+  color:#737373;
+}
+.siite-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.siite-footer .social-icons
+{
+  text-align:right
+}
+.siite-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .siite-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .siite-footer
+  {
+    padding-bottom:0
+  }
+  .siite-footer .copyright-text,.siite-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+h1{text-align: center;
+color: goldenrod;
+}
+.img{text-align: center;
+}
+h2{color: goldenrod;}
+p{
+  font-style: 40px;
+}
+
+/*anime here*/
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;1
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(8, 8, 8, 0.75);}
+  to{border-right-color: transparent;}
+}
+</style>
+</head>
+<body>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about.html">About</a>
+        <a href="more.html">Life after Lockdown</a>
+        <a href="advertisement.html">advertisement</a>
+        <a href="contact.html">Contact</a> 
+        <a href="index(1).html">Qhabukazi</a>
+        <a href="find us.html">Find us</a>
+        <a href="business.html">Business</a>
+        <a href="school.html">School</a>
+        <a href="#">Members</a>
+
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      
+       <br><br>
+       <div style="main">
+        <h2 class="line-1 anim-typewriter">FIGHT COVID 19</h2>
+      </div>
+      
+      
+      <div class="img">
+        <img src="community-banner-kids-outside-school-1200px.jpg" width="1135px" height="300px">
+        
+        </div>
+      
+        <br>
+      <p>Personal information is secured within the Company cookies.</p>
+      <h2>Get in touch. check response by email.</h2>
+      
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+         
+
+
+
+    <!-- START HERE -->
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Style The Contact Form How Ever You Prefer -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+<form id="gform" method="POST" class="pure-form pure-form-stacked"
+action="https://formspree.io/f/mdoygrvv">
+ <!-- change the form action to my script url -->
+
+ <fieldset class="pure-group">
+   <label for="name">Name: </label>
+   <input id="name" name="name" placeholder="What is your name ?" />
+ </fieldset>
+
+ <fieldset class="pure-group">
+   <label for="message">Message: </label>
+   <textarea id="message" name="message" rows="10"
+   placeholder="Tell us what's on your mind..."></textarea>
+ </fieldset>
+
+ <fieldset class="pure-group">
+   <label for="email">Your Email Address:</label>
+   <input id="email" name="_replyto" type="email" value="" method="POST"
+   required placeholder="name@email.com"/>
+   <span id="email-invalid" style="visibility:hidden">
+     Must be a valid email address</span>
+ </fieldset>
+
+ <fieldset class="pure-group">
+   <label for="like">What do you like: </label>
+   <input id="like" name="like" placeholder="specify" />
+ </fieldset>
+
+ <button class="button-success pure-button button-xlarge">
+   <i class="fa fa-paper-plane" type="submit"></i>&nbsp;Send</button>
+
+</form>
+
+<!-- Customise the Thankyou Message People See when they submit the form: -->
+<div style="display:none;" id="thankyou_message">
+ <h2><em>Thanks</em> for contacting us!
+   We will get back to you soon!</h2>
+</div>
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<!-- <script data-cfasync="false" type="text/javascript"
+src="/form-submission-handler.js"></script> -->
+<!-- END -->
+<br><br><br><br>
+    <footer class="siite-footer">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contribution.html">Contribute</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a href="#">Qhabukazi Programmes</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+       <!---    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   -->
+            <img src="insta.png" width="30px" height="30px" style="padding-left: 90px;">
+            <img src="twitter.png" width="30px" height="30px" style="padding-left: 90px;">
+            <img src="facebook (1).png" width="30px" height="30px" style="padding-left: 90px;">
+            <img src="whatsapp.png" width="30px" height="30px" style="padding-left: 90px;">
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+ 
+</body>            
+</html>

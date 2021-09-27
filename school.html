@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>/*starts here*/
+  body {
+    font-family: "Lato", sans-serif;
+    background-image: url('unnamed.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
+  
+  .sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 710px;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+}
+
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(58, 51, 51);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 1105px;
+   
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+  .site-footer
+  {
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+  }
+  .site-footer hr
+  {
+    border-top-color:#bbb;
+    opacity:0.5
+  }
+  .site-footer hr.small
+  {
+    margin:20px 0
+  }
+  .site-footer h6
+  {
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+  }
+  .site-footer a
+  {
+    color:#737373;
+  }
+  .site-footer a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links
+  {
+    padding-left:0;
+    list-style:none
+  }
+  .footer-links li
+  {
+    display:block
+  }
+  .footer-links a
+  {
+    color:#737373
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+    display:inline-block
+  }
+  .site-footer .social-icons
+  {
+    text-align:right
+  }
+  .site-footer .social-icons a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+  }
+  .copyright-text
+  {
+    margin:0
+  }
+  @media (max-width:991px)
+  {
+    .site-footer [class^=col-]
+    {
+      margin-bottom:30px
+    }
+  }
+  @media (max-width:767px)
+  {
+    .site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
+    }
+  }
+  .social-icons
+  {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+  }
+  .social-icons li
+  {
+    display:inline-block;
+    margin-bottom:4px
+  }
+  .social-icons li.title
+  {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+  }
+  .social-icons a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+    background-color:#3b5998
+  }
+  .social-icons a.twitter:hover
+  {
+    background-color:#00aced
+  }
+  .social-icons a.linkedin:hover
+  {
+    background-color:#007bb6
+  }
+  .social-icons a.dribbble:hover
+  {
+    background-color:#ea4c89
+  }
+  @media (max-width:767px)
+  {
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  h1{text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  .img{text-align: center;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  input[type=text],select,textarea{
+     width: 50%;
+     padding: 5px;
+     border: 1px solid #000000;
+     padding-top: 4px;
+     padding-bottom: 10px;    
+     resize: vertical;
+     
+  }
+  input[type=submit]:hover{
+  background-color: grey;
+  }
+  input[type=submit]{
+      background-color: #4caf50;
+      color: beige;
+      padding: 10px 90px;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      padding: 10px 90px;
+      padding-left: 20px;
+  }
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+
+/*anime here*/
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;1
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(8, 8, 8, 0.75);}
+  to{border-right-color: transparent;}
+}
+  
+h1{color: goldenrod}
+#pq{
+  text-align: center;
+  font-size: 35px;
+}
+  </style>
+<body>
+
+
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="about.html">About</a>
+    <a href="more.html">Life after Lockdown</a>
+    <a href="advertisement.html">advertisement</a>
+    <a href="contact.html">Contact</a>
+    <a href="index(1).html">Qhabukazi</a>
+    <a href="find us.html">Find us</a>
+    <a href="business.html">Business</a>
+    <a href="school.html">School</a>
+    <a href="members page (1).html">Members</a>   
+     
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  
+   <br><br>
+   <div style="main">
+    <h2 class="line-1 anim-typewriter">School</h2>
+  </div>
+ 
+
+
+<div class="img">
+<img src="community-banner-kids-outside-school-1200px.jpg" width="1205px" height="300px">
+
+</div>
+
+
+ 
+ 
+  <p id="pq">The outbreak of COVID-19 has upended normal life.</p>
+  <p id="pq"> countries worldwide imposing lockdowns and physical distancing measures,our daily routines have had to change.</p>
+  
+  <table>
+    <tr>
+    <tr>
+     <td>
+    <h1>Learning at home and in school</h1>
+  <p>While lockdown has disrupted formal schooling,<br> it has also increased parenteal engagement through<br> homeschooling and accelerated schools adoption of digital learning.
+  <br>Many parents will welcome a safe reopening of <br>schools however keeping parents engaged at home is <br>important as it is associated with better academic performance and<br> will be particularly important for disadvantaged families to help reduce the attainment gap</p>
+     </td>
+
+
+
+     <td>
+<h1>School based</h1>
+ <P>Students will now be able to go to school.<br>They will be able to go in full groups.<br>There will no more missed classes.<br>
+  No more extra mural classes of anykind on this site <br>they will have those classes individually with a breek of <br>internet connection given at school by the governmnet free wifis.
+</P>
+</td>
+<td>
+
+<h1>Be bold</h1>
+ <p>If you can, think radically about the <br>positive aspects of the situation that you’d like to retain.<br>
+ Take this chance to embed different ways <br>of working in your school environment.<br>
+ During Mental Health Awareness Week 2020, <br>we encouraged leaders to think about how they could put kindness, <br>dignity and wellbeing at the heart of their institutions,<br>and we would encourage school leaders to do the same.<br>
+ What would this look like in your school?  </p>
+</td>
+</td>
+</tr></tr></table>
+
+<table>
+  <tr>
+ <tr><td>
+<h1>Pastoral care</h1>
+<p>Make time for pupils to connect with adults<br> and ensure staff are effectively supported with<br> clear processes in place for reporting safeguarding <br>and pastoral issues, or for signposting to other external sources of support. </p>
+
+
+
+
+
+
+<td>
+
+<h1>Training</h1>
+<p>Take stock of where there might be gaps in <br>knowledge and confidence around child and <br>adolescent mental health amongst staff.
+<br>You could provide learning resources, such as <br>those on FutureLearn or other online platforms,<br> and time for staff to complete them, until formal training can be implemented.</p>  
+ </td>
+
+ <td>
+<h1>Highlight available support</h1> 
+<p>From both within school and in your local<br> community and share this as widely as possible with pupils and staff.<br>
+Identify organisations that might provide counselling <br>or advice for frontline workers, as well <br>as mental health and wellbeing support for pupils.</p> 
+</td>
+</td></tr></tr></table>
+
+
+
+
+
+
+
+<table>
+  <tr>
+ <tr><td>
+<h1><br><br>Work together</h1>
+<p>There may be support available from statutory agencies <br>or third sector and community organisations that you can<br> draw on to implement some of these suggestions.
+  <br>You might even find that parents in your community have<br> their own training or resources that they are happy to <br>share with the school. 
+ <br> Spending time mapping the support available and<br> building relationships with these groups may be a good starting point.
+
+<br>Students will now be able to interact and maintain no social distancing
+<br>Students will be allowed to wear no masks
+<br>Students will now attend school regulary from Monday to Friday
+<br>As now Students will attend regulary their learning skills will improve
+<br>They will no longer feel pressure and they will cope well</p>
+</td>
+
+<td>
+  <h1>Engage parents</h1> 
+  <p>Parents and care givers will also likely be <br>feeling a range of emotions about the situation and <br>the impact it is having on their children.
+  <br>If you can, offer opportunities for parents <br>and care givers to engage with you directly, to share<br>their feelings and worries and let them know about<br> the support you have in place for pupils.
+  <br>It might also be helpful to share resources <br>they can use to support their children – our Time for<br> Us pack and Make it Count guides, for example.</p> 
+  
+</td>
+
+</tr>
+</tr>
+</table>
+
+
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+  </script>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+           
+              
+            
+            </div>
+    
+         
+    
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contribution.html">Contribute</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="https://qhabukazi-programmes.myshopify.com">Qhabukazi-programmes</a>.
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+           <!---    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   -->
+                <img src="insta.png" width="30px" height="30px" style="padding-left: 90px;">
+                <img src="twitter.png" width="30px" height="30px" style="padding-left: 90px;">
+                <img src="facebook (1).png" width="30px" height="30px" style="padding-left: 90px;">
+                <img src="whatsapp.png" width="30px" height="30px" style="padding-left: 90px;">
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+     
+</body>
+</html>

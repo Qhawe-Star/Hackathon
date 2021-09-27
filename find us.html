@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width-device-width,initial-scale="1.0>
+        <title>Find Us</title>
+        <style>
+/*qhawe css*/
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 710px;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+}
+
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(44, 41, 41);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-left: 1105px;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+
+
+
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+h2{
+    text-align: center;
+}
+h1{
+    padding-bottom: 150px;
+    margin: 180px;
+    font-size: 60px;
+    color: rgb(23, 23, 24);
+    font-family: 'Times New Roman', Times, serif;
+}
+.img{text-align: center;
+}
+.main{
+text-align: center;
+}
+                html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+      #map-canvas{
+        width: 40%;
+        height: 50%;
+        float: right;
+        margin-top: 5%;
+        margin-right: 0%;
+      }
+            .form{
+    margin-top: 30px;
+    margin-left: 0%;
+    box-shadow: 10px;
+    width: 50%;
+    height: 40%;
+    text-align: left;
+    background-color:white;
+    color: #333;
+
+}
+input[type=text],select,textarea{
+   width: 90%;
+   padding: 5px;
+   border: 1px solid #000000;
+   padding-top: 4px;
+   padding-bottom: 10px;    
+   resize: vertical;
+   
+}
+input[type=submit]{
+    background-color: #67f00b;
+    color: beige;
+    padding: 10px 90px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color:#ccc;
+
+}
+label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.location{
+  padding-top: 15px;
+}
+.container{
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 10px;
+}
+
+        </style>
+          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+          <script>
+      
+      var map;
+      
+      function initialize() {
+        var mapOptions = {
+          zoom: 16
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      
+        // Try HTML5 geolocation
+        if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = new google.maps.LatLng(position.coords.latitude,
+                                             position.coords.longitude);
+      
+            var infowindow = new google.maps.InfoWindow({
+              map: map,
+              position: pos,
+              content: 'Location found using HTML5.'
+            });
+      
+            map.setCenter(pos);
+          }, function() {
+            handleNoGeolocation(true);
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleNoGeolocation(false);
+        }
+      
+        var centerControlDiv = document.createElement('div');
+        var centerControl = new CenterControl(centerControlDiv, map, chicago);
+      
+        centerControlDiv.index = 1;
+        map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv);
+      
+      }
+      
+      function handleNoGeolocation(errorFlag) {
+        if (errorFlag) {
+          var content = 'Error: The Geolocation service failed.';
+        } else {
+          var content = 'Error: Your browser doesn\'t support geolocation.';
+        }
+      
+        var options = {
+          map: map,
+          position: new google.maps.LatLng(60, 105),
+          content: content
+        };
+      
+        var infowindow = new google.maps.InfoWindow(options);
+        map.setCenter(options.position);
+      
+      
+      }
+      
+      
+      
+      
+      
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+      
+      
+      
+      
+          </script>
+    </head>
+    <body>
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about.html">About</a>
+        <a href="more.html">Life after Lockdown</a>
+        <a href="advertisement.html">advertisement</a>
+        <a href="contact.html">Contact</a>
+         <a href="index(1).html">Qhabukazi</a>
+          <a href="find us.html">Find us</a>
+          <a href="business.html">Business</a>
+          <a href="school.html">School</a>
+          <a href="members page (1).html">Members</a>
+
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      
+       
+      <div id="map-canvas"></div>
+<h1>Find Us</h1>
+<div class="img">
+  <img src="community-banner-kids-outside-school-1200px.jpg" width="1205px" height="300px">
+  
+  </div>
+<form action="https://formspree.io/f/mknkovkz"method="POST" class="form">
+    <label for="First Name">First Name :</label>
+         <input type="text"id="fname"name="First name"placeholder="First Name"required><br>
+            <label for="Last Name">Last name :</label>
+         <input type="text"id="lname"name="Last name"placeholder="Last Name"require><br>
+         <label for="contact N.o">Contact N.o</label>
+         <input type="text"id="contact"number="Contact"placeholder="Contact N.o"><br>
+    <label for="Location">Location :</label>
+        <select id="Location"name="Location"placeholder="Location">
+            <option value="Langa"required>Langa</option>
+            <option value="Phillipi"required>Phillipi</opption>
+            <option value="Delft"required>Delft</option>
+            <option value="Khayelitsha"required>Khayelitsha</optioin>
+                <option value="Other"required>Other</option>
+        </select><br>
+<label for="Subject">Subject</label><br>
+<textarea id="Subject"name="Subject"placeholder="Reason of getting in touch..."required style="height: 110px;"></textarea>
+<input type="submit"value="Submit">
+</form>
+<br><br><br>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+  </script>
+     
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+     
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact.html#">Contact Us</a></li>
+          <li><a href="contribution.html">Contribute</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="#">Qhabukazi Programmes</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+     <!---    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   -->
+          <img src="insta.png" width="30px" height="30px" style="padding-left: 90px;">
+          <img src="twitter.png" width="30px" height="30px" style="padding-left: 90px;">
+          <img src="facebook (1).png" width="30px" height="30px" style="padding-left: 90px;">
+          <img src="whatsapp.png" width="30px" height="30px" style="padding-left: 90px;">
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </body>
+</html>
